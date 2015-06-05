@@ -1,0 +1,32 @@
+TouchMIDI
+turns your touchpad into a MIDI controller!
+
+this was my first linux project ever and I don't have a lot of use for it any more
+so I haven't done anything to maintain it, but I'm posting it in case someone
+finds it useful or interesting.  Go ahead and leave an issue if it doesn't work 
+and I'll try to help you out.
+
+As with all open source software, there are no guarantees for anything here.
+
+This was created by forking the synclient app and VMPK and frankenstiening
+them together. Its probably horrible looking code but it worked and I needed
+it at the time (in fact one of my best recordings was made using it).
+
+There are a few dependencies:
+g++
+qt4-make
+xserver-xorg-input-synaptics-dev
+libxi-dev
+xserver-xorg-dev
+libasound2-dev
+
+To install open terminal and go to this directory. Then enter:
+
+qmake-qt4
+make
+
+then run the binary that appears here magically.
+Enjoy. 
+
+You should also enable SHMConfig if it is not already. There are instructions at:
+https://help.ubuntu.com/community/SynapticsTouchpad#Enabling_SHMConfig_in_order_to_get_synclient_debug_output
